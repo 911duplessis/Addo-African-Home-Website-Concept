@@ -1,118 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Addo African Home — Free website concept | Insight Forge</title>
-  <meta name="description" content="Free Insight Forge website concept for Addo African Home — eco-guesthouse near Addo Elephant National Park. Not a live site. No obligation.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Addo African Home · Insight Forge concept</title>
+  <meta name="description" content="Free Insight Forge website concept for Addo African Home — eco-guesthouse near Addo Elephant National Park. Not a live site." />
   <style>
-    :root { --sand:#c4a574; --earth:#3d2b1f; --sage:#5c7a4a; --cream:#f6efe4; --linen:#faf6f0; --wine:#6b2e2e; --sky:#2c3d3a; --ink:#1c1612; }
-    * { box-sizing:border-box; margin:0; padding:0; }
-    html { scroll-behavior:smooth; }
-    body { font-family:Georgia, serif; color:var(--ink); background:var(--linen); line-height:1.6; }
-    .sans { font-family:system-ui,sans-serif; }
-    .banner { background:#1c1612; color:#f6efe4; text-align:center; font-size:0.78rem; letter-spacing:0.04em; padding:0.55rem 1rem; }
-    header { position:sticky; top:0; z-index:20; background:rgba(250,246,240,0.94); backdrop-filter:blur(8px); border-bottom:1px solid rgba(61,43,31,0.12); }
-    nav { max-width:1080px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; padding:0.85rem 1.25rem; gap:1rem; }
-    .brand { font-weight:700; }
-    .brand span { display:block; font-family:system-ui,sans-serif; font-size:0.68rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--sage); }
-    .nav-links { display:flex; gap:1rem; font-family:system-ui,sans-serif; font-size:0.82rem; }
-    .nav-links a { color:var(--earth); text-decoration:none; }
-    .cta { background:var(--wine); color:#fff; text-decoration:none; font-family:system-ui,sans-serif; font-size:0.82rem; font-weight:600; padding:0.55rem 0.95rem; border-radius:999px; }
-    .hero { min-height:78vh; background:linear-gradient(180deg,rgba(28,22,18,0.35),rgba(28,22,18,0.82)), linear-gradient(135deg,#5c7a4a,#3d2b1f 45%,#2c3d3a); color:#faf6f0; display:flex; align-items:flex-end; }
-    .hero-inner { max-width:1080px; margin:0 auto; padding:5rem 1.25rem 3.2rem; }
-    .eyebrow { font-family:system-ui,sans-serif; letter-spacing:0.16em; text-transform:uppercase; font-size:0.72rem; color:var(--sand); margin-bottom:0.8rem; }
-    .hero h1 { font-size:clamp(2.2rem,6vw,4.1rem); line-height:1.08; max-width:14ch; }
-    .hero p.lead { margin-top:1rem; max-width:36rem; font-size:1.12rem; color:#f0e6d6; }
-    .hero-actions { margin-top:1.6rem; display:flex; flex-wrap:wrap; gap:0.7rem; }
-    .btn-light { background:var(--cream); color:var(--earth); padding:0.7rem 1.1rem; border-radius:999px; text-decoration:none; font-family:system-ui,sans-serif; font-weight:600; font-size:0.9rem; }
-    .btn-ghost { border:1px solid rgba(246,239,228,0.45); color:#fff; padding:0.7rem 1.1rem; border-radius:999px; text-decoration:none; font-family:system-ui,sans-serif; font-size:0.9rem; }
-    section { max-width:1080px; margin:0 auto; padding:3.4rem 1.25rem; }
-    h2 { font-size:clamp(1.6rem,3vw,2.2rem); margin-bottom:0.6rem; }
-    .sub { font-family:system-ui,sans-serif; color:#5a4c40; margin-bottom:1.6rem; max-width:40rem; }
-    .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1rem; }
-    .card { background:#fff; border:1px solid rgba(61,43,31,0.08); border-radius:16px; padding:1.2rem 1.15rem; }
-    .card h3 { font-size:1.08rem; margin-bottom:0.35rem; }
-    .card p { font-family:system-ui,sans-serif; font-size:0.92rem; color:#4a4038; }
-    .split { display:grid; grid-template-columns:1.1fr 0.9fr; gap:1.6rem; }
-    .panel { background:var(--sky); color:#f6efe4; border-radius:18px; padding:1.6rem; }
-    .panel li { font-family:system-ui,sans-serif; font-size:0.95rem; color:#e6ddd0; }
-    .proof { background:#fff8ee; border:1px solid rgba(196,165,116,0.4); border-radius:16px; padding:1.3rem 1.4rem; }
-    footer { background:var(--earth); color:#e8dccb; padding:2rem 1.25rem 2.6rem; text-align:center; font-family:system-ui,sans-serif; font-size:0.84rem; }
-    @media (max-width:760px){ .nav-links{display:none;} .split{grid-template-columns:1fr;} }
+    :root { --ink: #1c1612; --paper: #faf6f0; --sand: #c4a574; --sage: #5c7a4a; --earth: #3d2b1f; --wine: #6b2e2e; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Georgia, "Iowan Old Style", serif; color: var(--ink); background: var(--paper); line-height: 1.6; }
+    .banner { background: var(--earth); color: var(--paper); text-align: center; padding: 10px 16px; font-size: 13px; }
+    header { background: linear-gradient(160deg, #2c241c 0%, #4a3a2a 100%); color: var(--paper); padding: 80px 24px 60px; text-align: center; }
+    header .kicker { letter-spacing: .2em; text-transform: uppercase; font-size: 12px; opacity: .8; }
+    header h1 { font-size: clamp(2.4rem, 7vw, 4.2rem); font-weight: 500; margin: 12px 0; }
+    header .sub { font-style: italic; opacity: .9; max-width: 640px; margin: 0 auto; }
+    nav { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; padding: 16px; background: #f0e8dc; border-bottom: 1px solid #e2d6c0; font-size: 14px; letter-spacing: .05em; text-transform: uppercase; }
+    nav a { color: var(--ink); text-decoration: none; }
+    section { max-width: 960px; margin: 0 auto; padding: 56px 24px; }
+    h2 { font-weight: 500; font-size: 1.9rem; margin-bottom: 18px; color: var(--earth); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+    .card { background: #fff; border: 1px solid #e8dcc8; padding: 22px; }
+    .cta { display: inline-block; margin-top: 24px; background: var(--sage); color: #fff; padding: 14px 26px; text-decoration: none; letter-spacing: .08em; text-transform: uppercase; font-size: 13px; }
+    footer { background: var(--earth); color: var(--paper); text-align: center; padding: 40px 16px; font-size: 13px; }
+    .note { font-size: 13px; background: #f0e8dc; border-left: 4px solid var(--sand); padding: 14px 18px; margin-top: 32px; }
   </style>
 </head>
 <body>
-  <div class="banner sans">Insight Forge free website concept — not a live site · no obligation · 25 Sep 2026</div>
+  <div class="banner">Insight Forge free website concept · not a live site · prepared 10 Oct 2026 · fact-aligned only</div>
   <header>
-    <nav>
-      <div class="brand">Addo African Home<span>Addo · Sundays River Valley</span></div>
-      <div class="nav-links">
-        <a href="#stay">Stay</a><a href="#story">Story</a><a href="#addo">Addo</a><a href="#enquire">Enquire</a>
-      </div>
-      <a class="cta" href="tel:+27422331244">042 233 1244</a>
-    </nav>
+    <p class="kicker">Addo · Sundays River Valley · Eastern Cape</p>
+    <h1>Addo African Home</h1>
+    <p class="sub">#1 of 10 specialty lodgings in Addo on TripAdvisor · 4.6 / 367 reviews · minutes from Addo Elephant National Park</p>
   </header>
-  <section class="hero" style="max-width:none;padding:0;">
-    <div class="hero-inner">
-      <p class="eyebrow">Near Addo Elephant National Park</p>
-      <h1>A quiet place to land after the park.</h1>
-      <p class="lead">Eco-guesthouse with traditional rondavels and a restored farmhouse — ten minutes from the main gate — known for an organic garden and a cooking school that trains young South Africans.</p>
-      <div class="hero-actions">
-        <a class="btn-light" href="#enquire">Enquire directly</a>
-        <a class="btn-ghost" href="mailto:info@addoafricanhome.co.za">info@addoafricanhome.co.za</a>
-      </div>
-    </div>
+  <nav>
+    <a href="#story">Story</a>
+    <a href="#stay">Stay</a>
+    <a href="#impact">Impact</a>
+    <a href="#enquire">Enquire</a>
+  </nav>
+  <section id="story">
+    <h2>An owned home for a #1 reputation</h2>
+    <p>Addo African Home already has what most guesthouses spend years building: 367 TripAdvisor reviews averaging 4.6 stars, ranked first among specialty lodging in Addo. Guests mention the rondavels, the organic garden, and the warmth of the team. What is missing is a confirmed, working website at addoafricanhome.co.za — the domain that already hosts the public email. A simple, owned page would stop searchers from landing only on Booking.com or directories and let the cooking-school and garden story be told in the business’s own words.</p>
   </section>
   <section id="stay">
-    <h2>Why guests choose this home</h2>
-    <p class="sub">Facts from public listings and TripAdvisor volume only. Hours, rates and exact room inventories are not invented here.</p>
-    <div class="cards">
-      <article class="card"><h3>Rondavels &amp; farmhouse</h3><p>Traditional rondavels and a restored farmhouse — a lodge stay rather than a hotel corridor.</p></article>
-      <article class="card"><h3>Organic garden</h3><p>An on-site organic vegetable garden is part of the public story of the property.</p></article>
-      <article class="card"><h3>Cooking school</h3><p>A cooking school that trains young South Africans — hospitality with a training purpose.</p></article>
-      <article class="card"><h3>Park access</h3><p>About ten minutes from Addo Elephant National Park’s main gate, Sundays River Valley.</p></article>
+    <h2>Rondavels, garden, and the park</h2>
+    <div class="grid">
+      <div class="card"><h3>Traditional rondavels</h3><p>Quiet sleep close to the main gate of Addo Elephant National Park. Direct enquiry keeps more of the stay with you.</p></div>
+      <div class="card"><h3>Organic garden</h3><p>On-site vegetables that appear on the table. A short page can show the garden that reviewers already praise.</p></div>
+      <div class="card"><h3>10 minutes from the park</h3><p>Clear location, hours, and a map so guests who search “Addo guesthouse” find you first.</p></div>
     </div>
   </section>
-  <section id="story">
-    <div class="split">
-      <div>
-        <h2>Fair-trade hospitality, told in your own words</h2>
-        <p class="sub">Right now discovery leans on Booking.com, TripAdvisor and tourism directories. This concept page is a home for the story guests already praise — without sending them through a third party first.</p>
-        <p class="sub">Public sources describe fair-trade principles, youth training, and an organic garden. Exact programme names and schedules should be confirmed with the owners before a live site ships.</p>
-      </div>
-      <div class="panel">
-        <h3>Suggested page map</h3>
-        <ul>
-          <li>Home — park-adjacent promise + enquire</li>
-          <li>Rooms — rondavels &amp; farmhouse</li>
-          <li>Restaurant &amp; cooking school</li>
-          <li>Fair-trade / training story</li>
-          <li>Getting to the park</li>
-          <li>Direct enquire — phone &amp; email already public</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <section id="addo">
-    <div class="proof">
-      <strong>4.6 / 5 across 367 TripAdvisor reviews</strong>
-      <p class="sans" style="margin-top:0.45rem;">Ranked #1 of 10 speciality lodging listings in Addo on TripAdvisor at the time of research. No review quotes are fabricated on this concept page.</p>
-    </div>
+  <section id="impact">
+    <h2>Cooking school & fair-trade story</h2>
+    <p>The business runs a cooking school that trains young South Africans and operates on fair-trade principles. That differentiated story has no confirmed independent home online. A concept page can place it beside the rooms and the garden without inventing any detail.</p>
   </section>
   <section id="enquire">
-    <h2>Enquire</h2>
-    <p class="sub">Use the public channels already listed by Addo Tourism. Opening hours and rates: confirm with the property — not shown here.</p>
-    <div class="cards">
-      <article class="card"><h3>Phone</h3><p><a href="tel:+27422331244">042 233 1244</a></p></article>
-      <article class="card"><h3>Email</h3><p><a href="mailto:info@addoafricanhome.co.za">info@addoafricanhome.co.za</a></p></article>
-      <article class="card"><h3>Domain note</h3><p>addoafricanhome.co.za is registered and used for email. Live-site status was not confirmed during research.</p></article>
-    </div>
+    <h2>Enquire directly</h2>
+    <p>Name, dates, number of guests, and a short note. Published phone 042 233 1244 and email info@addoafricanhome.co.za so the Facebook page and OTAs are no longer the only doors.</p>
+    <a class="cta" href="#enquire">Concept enquiry only</a>
+    <p class="note">This is a design concept only. Insight Forge does not contact the business unless you approve. Domain status of addoafricanhome.co.za was inconclusive in the original research and should be confirmed before any live build.</p>
   </section>
   <footer>
-    <p>Insight Forge free website concept — not the live Addo African Home website.</p>
-    <p>Fact-aligned to the 17 Sep 2026 pipeline assessment. No booking engine. No invented rates or hours.</p>
-    <p>Draft only. Outreach is not sent unless you approve.</p>
+    Insight Forge · sell the insight first · Addo, Eastern Cape
   </footer>
 </body>
 </html>
